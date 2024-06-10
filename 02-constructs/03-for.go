@@ -59,6 +59,7 @@ X_LOOP:
 			if x == y {
 				fmt.Println("====================")
 				continue X_LOOP // controlling the outer loop from an inner loop using label
+				// goto X_LOOP
 			}
 		}
 	}
