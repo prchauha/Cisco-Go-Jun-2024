@@ -99,6 +99,7 @@ go run [file_name.go]
 |byte           | 0 |
 |interface      | nil |
 |pointer        | nil |
+|function       | nil |
 |struct         | struct instance |
 
 ## Variables
@@ -127,3 +128,10 @@ go run [file_name.go]
 - Anonymous Functions
     - Anonymous functions cannot have any name
     - Anonymous functions have to invoked immediately
+- Higher Order Functions (ability to treats functions like data)
+    - Functions can be assigned as values to variables
+    - Functions can be passed as arguments to other functions
+    - Functions can be returned as return values from other functions
+
+
+
