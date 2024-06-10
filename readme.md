@@ -106,3 +106,6 @@ go run [file_name.go]
 ### Package Scope
 - Can have unused variables
 - Cannot use ":="
+
+## Functions
+- No support for function overloading
