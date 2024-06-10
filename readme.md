@@ -88,7 +88,20 @@ go run [file_name.go]
     - byte (alias for unnsigned int)
     - rune (alias for unicode code point)
 
-## Variable
+### Zero values
+| Data Type | Zero value |
+------------ | ------------- |
+|int family     | 0 |
+|uint family    | 0 |
+|complex family | (0+0i) |
+|string         | "" (empty string) |
+|bool           | false |
+|byte           | 0 |
+|interface      | nil |
+|pointer        | nil |
+|struct         | struct instance |
+
+## Variables
 ### Declaration
 - Using the "var" keyword
     - memory allocated
@@ -109,3 +122,5 @@ go run [file_name.go]
 
 ## Functions
 - No support for function overloading
+- Functions can return more than 1 result
+    - Use "named" results for more than 1 result
