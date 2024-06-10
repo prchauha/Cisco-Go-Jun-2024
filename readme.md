@@ -47,7 +47,7 @@
     - No inheritance (only composition)
     - No exceptions (only errors)
     - No "try-catch-finally"
-    - No implicity type conversion
+    - No implicit type conversion
     - No pointer arithmatic
 
 ## Standard Library
