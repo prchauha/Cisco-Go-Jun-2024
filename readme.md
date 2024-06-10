@@ -124,3 +124,6 @@ go run [file_name.go]
 - No support for function overloading
 - Functions can return more than 1 result
     - Use "named" results for more than 1 result
+- Anonymous Functions
+    - Anonymous functions cannot have any name
+    - Anonymous functions have to invoked immediately
