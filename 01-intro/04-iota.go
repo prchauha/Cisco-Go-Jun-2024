@@ -57,13 +57,25 @@ func main() {
 	fmt.Printf("Red=%d, Green=%d and Blue=%d\n", Red, Green, Blue)
 
 	// Mimicking Unix file permissions
+	/*
+		const (
+			X = iota << 1
+			W
+			R
+		)
+
+		fmt.Println(X, W, R)
+		fmt.Printf("%b %b %b\n", X, W, R)
+	*/
+
 	const (
-		X = iota << 1
+		X = 1 << iota
 		W
 		R
-		XW = X | W
+		XW  = X | W
+		WR  = W | R
+		XWR = X | W | R
 	)
-	// fmt.Println(X, W, R)
-	fmt.Printf("%b %b %b\n", X, W, R)
-	fmt.Printf("%b\n", XW)
+	fmt.Printf("%b %b %b %b %b %b\n", X, W, XW, R, WR, XWR)
+
 }
