@@ -49,6 +49,7 @@ func main() {
 		// fallthrough
 	case 7:
 		fmt.Println("no <= 7")
+
 	}
 
 	// fallthrough applied
