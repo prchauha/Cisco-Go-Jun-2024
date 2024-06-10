@@ -61,7 +61,9 @@ func main() {
 		X = iota << 1
 		W
 		R
+		XW = X | W
 	)
 	// fmt.Println(X, W, R)
 	fmt.Printf("%b %b %b\n", X, W, R)
+	fmt.Printf("%b\n", XW)
 }
