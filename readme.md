@@ -63,4 +63,38 @@ Build and execute
 ```shell
 go run [file_name.go]
 ```
+## Data Types
+- string
+- bool
+- integers
+    - int8
+    - int16
+    - int32
+    - int64
+    - int
+- unsigned integers
+    - uint8
+    - uint16
+    - uint32
+    - uint64
+    - uint
+- floating points
+    - float32
+    - float64
+- complex
+    - complex64 ( real[float32] + imaginary[float32] )
+    - complex128 ( real[float64] + imaginary[float64] )
+- alias
+    - byte (alias for unnsigned int)
+    - rune (alias for unicode code point)
 
+## variable
+### Declaration
+    - Using the "var" keyword
+        - memory allocated
+        - memory initialized with the "zero" value of the data type (by default)
+        - can be used in package & function scope
+    - Using ":="
+        - memory allocated
+        - memory initialized with the given value
+        - cannot use in the package scope
