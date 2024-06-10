@@ -50,4 +50,17 @@
     - No implicity type conversion
     - No pointer arithmatic
 
+## Standard Library
+    - https://pkg.go.dev/std
+
+## "go" Tool
+Create a build
+```shell
+go build [file_name_1.go] [file_name_2.go] ...
+go build -o [binary_name] [file_name_1.go] [file_name_2.go] ...
+```
+Build and execute
+```shell
+go run [file_name.go]
+```
 
