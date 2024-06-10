@@ -2,6 +2,12 @@ package main
 
 import "fmt"
 
+// unused variable at the package scope are allowed
+var x int
+
+// cannot use ":=" at the package scope
+// y := 200
+
 func main() {
 
 	/*

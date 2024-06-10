@@ -88,13 +88,21 @@ go run [file_name.go]
     - byte (alias for unnsigned int)
     - rune (alias for unicode code point)
 
-## variable
+## Variable
 ### Declaration
-    - Using the "var" keyword
-        - memory allocated
-        - memory initialized with the "zero" value of the data type (by default)
-        - can be used in package & function scope
-    - Using ":="
-        - memory allocated
-        - memory initialized with the given value
-        - cannot use in the package scope
+- Using the "var" keyword
+    - memory allocated
+    - memory initialized with the "zero" value of the data type (by default)
+    - can be used in package & function scope
+- Using ":="
+    - memory allocated
+    - memory initialized with the given value
+    - cannot use in the package scope
+
+## Scope
+### Function Scope
+- Cannot have unused variables
+- Can use ":="
+### Package Scope
+- Can have unused variables
+- Cannot use ":="
