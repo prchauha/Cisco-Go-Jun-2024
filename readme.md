@@ -175,3 +175,13 @@ go build -gcflags="-l" [filename.go]
 
 ## Deferred Functions
 - Functions whose execution is postponed until the current function exeuction is completed
+
+## Panic & Recovery
+### Panic
+- Represents the state of the application where the application execution cannot proceed further
+- The deferred functions that are scheduled to execute will be executed with the panic occurs
+- Creating a panic
+    - panic() function
+### Recovery
+- Using the recover() function one can gain access to the error that resulted in a panic
+- Arrest the abrupt shutdown of the application 
