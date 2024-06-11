@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// decider that decides "which" function to execute
+// executor - executes the given function
 func main() {
 	exec(f1) //=> execute f1
 	exec(f2) //=> execute f2
@@ -11,8 +11,8 @@ func main() {
 	})
 }
 
-// executor - executes the given function
-func exec(fnRef func()) {
+// decider that decides "which" function to execute
+func get(fnRef func()) {
 	fnRef()
 }
 
