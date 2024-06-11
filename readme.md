@@ -138,10 +138,18 @@ go run [file_name.go]
 go run -gcflags="-m" [filename.go]
 go build -gcflags="-m" [filename.go]
 ```
-
+ 
 ## Disable function inlining
 ```
 go run -gcflags="-l" [filename.go]
 go build -gcflags="-l" [filename.go]
 ```
 
+## Collections
+### Array
+- Fixed sized typed collection
+- Memory is allocated & initialized automatically
+- Arrays are "values"
+
+### Slice
+### Map
