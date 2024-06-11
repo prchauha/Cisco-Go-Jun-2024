@@ -161,3 +161,5 @@ go build -gcflags="-l" [filename.go]
 ![image](./images/slices.png)
 
 ### Map
+- Typed collection of key/value pairs
+- delete() => delete a key
