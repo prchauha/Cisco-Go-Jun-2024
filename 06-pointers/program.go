@@ -9,6 +9,7 @@ func main() {
 	var numPtr *int
 	numPtr = &num // address of "num"
 	fmt.Printf("[main] %p => %d\n", numPtr, num)
+	fmt.Println(num == *(&num))
 
 	// access the value through the reference (aka pointer) - dereferencing
 	x := *numPtr
