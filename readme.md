@@ -163,3 +163,12 @@ go build -gcflags="-l" [filename.go]
 ### Map
 - Typed collection of key/value pairs
 - delete() => delete a key
+
+## Errors
+- Errors are just values 
+- Errors are not "thrown" but returned from a function
+- Error values must implement "error" interface (best practice)
+- Creating an error
+    - errors.New()
+    - fmt.ErrorF()
+    - Custom type that implements the "error" interface
