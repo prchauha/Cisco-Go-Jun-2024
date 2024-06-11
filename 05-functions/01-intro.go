@@ -51,6 +51,13 @@ func add(x, y int) int {
 // 2 parameters & 2 results
 /*
 func divide(x, y int) (int, int) {
+	var quotient, remainder int
+	quotient = x / y
+	remainder = x % y
+	return quotient, remainder
+}
+
+func divide(x, y int) (int, int) {
 	quotient := x / y
 	remainder := x % y
 	return quotient, remainder
