@@ -133,5 +133,15 @@ go run [file_name.go]
     - Functions can be passed as arguments to other functions
     - Functions can be returned as return values from other functions
 
+## Escape analysis
+```
+go run -gcflags="-m" [filename.go]
+go build -gcflags="-m" [filename.go]
+```
 
+## Disable function inlining
+```
+go run -gcflags="-l" [filename.go]
+go build -gcflags="-l" [filename.go]
+```
 
