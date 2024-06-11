@@ -35,7 +35,9 @@ func main() {
 
 	// slicing
 	fmt.Println("slicing")
-	fmt.Printf("nos[2:5] = %v\n", nos[2:5])
+	s2 := nos[2:5]
+	fmt.Printf("nos[2:5] = %v\n", s2)
+
 	fmt.Printf("nos[2:] = %v\n", nos[2:])
 	fmt.Printf("nos[:5] = %v\n", nos[:5])
 
