@@ -152,4 +152,9 @@ go build -gcflags="-l" [filename.go]
 - Arrays are "values"
 
 ### Slice
+- Varying sized typed collection
+- Uses an array internally
+- len() => size of the slice
+- append() => add new values to the slice
+
 ### Map
