@@ -25,7 +25,14 @@ func main() {
 	nos = append(nos, tens...)
 	fmt.Printf("nos = %v\n", nos)
 
-	nos2 := nos
+	// By default we create a new reference
+	// nos2 := nos
+
+	// To create a copy
+	nos2 := make([]int, len(nos))
+	copy(nos2, nos)
+
+	// modify nos2
 	nos2[0] = 9999
 	fmt.Printf("nos[0] = %d, nos2[0] = %d\n", nos[0], nos2[0])
 

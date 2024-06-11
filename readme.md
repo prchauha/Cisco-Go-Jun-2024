@@ -152,9 +152,12 @@ go build -gcflags="-l" [filename.go]
 - Arrays are "values"
 
 ### Slice
-- Varying sized typed collection
+- Dynamic sized typed collection
 - Uses an array internally
 - len() => size of the slice
+- cap() => capacity of the underlying array
 - append() => add new values to the slice
+- copy() => copies the data into a new slice
+![image](./images/slices.png)
 
 ### Map
