@@ -9,13 +9,13 @@ import (
 var ErrDivideByZero error = errors.New("divisor cannot be zero")
 
 func main() {
-	// divisor := 6
-	divisor := 0
+	divisor := 6
+	// divisor := 0
 
 	if q, r, err := divide(100, divisor); err == ErrDivideByZero {
 		fmt.Println("Do not attempt to divide by 0")
 	} else if err != nil {
-		fmt.Println("Error :", err)
+		fmt.Printf("Error :%v\n", err)
 	} else {
 		fmt.Printf("Dividing 100 by %d, quotient = %d and remainder = %d\n", divisor, q, r)
 	}

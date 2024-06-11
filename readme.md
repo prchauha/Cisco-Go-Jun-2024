@@ -172,3 +172,6 @@ go build -gcflags="-l" [filename.go]
     - errors.New()
     - fmt.ErrorF()
     - Custom type that implements the "error" interface
+
+## Deferred Functions
+- Functions whose execution is postponed until the current function exeuction is completed
