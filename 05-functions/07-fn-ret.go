@@ -1,19 +1,30 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+)
 
 // executor - executes the given function
 func main() {
-	exec(f1) //=> execute f1
-	exec(f2) //=> execute f2
-	exec(func() {
-		fmt.Println("anon fn invoked")
-	})
+	fn := getFn()
+	fn()
 }
 
 // decider that decides "which" function to execute
-func get(fnRef func()) {
-	fnRef()
+func getFn() func() {
+	randomNo := rand.Intn(100)
+	fmt.Println(randomNo)
+	switch {
+	case randomNo%2 == 0:
+		return f1
+	case randomNo%3 == 0:
+		return f2
+	default:
+		return func() {
+			fmt.Println("anon fn invoked")
+		}
+	}
 }
 
 func f1() {

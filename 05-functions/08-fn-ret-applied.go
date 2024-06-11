@@ -31,19 +31,37 @@ func main() {
 		subtract(100, 200)
 	*/
 
-	logOperation(add, 100, 200)
-	logOperation(subtract, 100, 200)
-	logOperation(func(i1, i2 int) {
-		fmt.Println("Multiply Result :", i1*i2)
-	}, 100, 200)
+	/*
+		logOperation(add, 100, 200)
+		logOperation(subtract, 100, 200)
+		logOperation(func(i1, i2 int) {
+			fmt.Println("Multiply Result :", i1*i2)
+		}, 100, 200)
+	*/
+
+	/*
+		logAdd := getLogOperation(add)
+		logAdd(100, 200)
+
+		logSubtract := getLogOperation(subtract)
+		logSubtract(100, 200)
+	*/
+
+	add := getLogOperation(add)
+	subtract := getLogOperation(subtract)
+
+	add(100, 200)
+	subtract(100, 200)
 
 }
 
 // refactor to avoid duplication in the log wrapper functions by applying "commonility variability technique"
-func logOperation(operation func(int, int), x, y int) {
-	fmt.Println("Operation Started")
-	operation(x, y)
-	fmt.Println("Operation Completed")
+func getLogOperation(operation func(int, int)) func(int, int) {
+	return func(x, y int) {
+		fmt.Println("Operation Started")
+		operation(x, y)
+		fmt.Println("Operation Completed")
+	}
 }
 
 // wrapper functions with log capabilities
