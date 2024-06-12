@@ -241,3 +241,5 @@ go mod why [module_name]
 ```go
 import "[module_name/package_name]"
 ```
+## Structs
+- like "class" on OO language
