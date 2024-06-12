@@ -267,3 +267,22 @@ import "[module_name/package_name]"
 go run --race [filename.go]
 go build --race [filename.go]
 ```
+
+### Communication (channels)
+#### Declaration
+```go
+var ch chan int
+```
+#### Initialization
+```go
+ch = make(chan int)
+```
+#### Operations (using channel operator - [ <- ] )
+##### Send Operation
+```go
+ch <- 100
+```
+##### Receive Operation
+```go
+data := <- ch
+```
