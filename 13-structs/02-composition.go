@@ -18,6 +18,18 @@ type PerishableProduct struct {
 	Expiry string
 }
 
+// Factory function to hide the complexity of creating a perishable product
+func NewPerishableProduct(id int, name string, cost float64, expiry string) *PerishableProduct {
+	return &PerishableProduct{
+		Product: Product{
+			Id:   id,
+			Name: name,
+			Cost: cost,
+		},
+		Expiry: expiry,
+	}
+}
+
 func main() {
 	// var grapes PerishableProduct
 	grapes := PerishableProduct{
@@ -33,6 +45,13 @@ func main() {
 	// fmt.Println(grapes.Cost)
 
 	// Use the Format & ApplyDiscount functions with 'grapes'
+	fmt.Println(Format(grapes.Product))
+	fmt.Println("After applying 10% discount")
+	ApplyDiscount(&grapes.Product, 10)
+	fmt.Println(Format(grapes.Product))
+
+	var milk = NewPerishableProduct(200, "Milk", 40, "1 Day")
+	fmt.Printf("%#v\n", milk)
 }
 
 func Format(p Product) string {
