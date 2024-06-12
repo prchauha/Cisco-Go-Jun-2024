@@ -185,3 +185,39 @@ go build -gcflags="-l" [filename.go]
 ### Recovery
 - Using the recover() function one can gain access to the error that resulted in a panic
 - Arrest the abrupt shutdown of the application 
+
+## Modules & Packages
+### Module
+- Any code that has to be versioned and deployed together
+- Typically a folder with go.mod file
+#### go.mod
+- Manifest file with the metadata of the module
+    - name
+        - repo path (advisable)
+    - go runtime version
+    - dependencies
+##### Creating a module
+```shell
+go mod init [module_name]
+```
+##### Creating a binary
+```shell
+go build .
+```
+##### Run a module
+```shell
+go run .
+```
+##### Add other modules (dependencies)
+```
+go get [module_name]
+```
+### Package
+- internal organization of a module
+- Typically folders
+- Can be nested
+
+#### Importing a package
+```go
+import "[module_name/package_name]"
+```
