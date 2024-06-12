@@ -243,3 +243,21 @@ import "[module_name/package_name]"
 ```
 ## Structs
 - like "class" on OO language
+
+## Concurrency
+- Achieved using OS Threads
+- OS Threads are costly resources
+    - ~2MB of memory (in linux)
+    - Creating & destrying threads are costly (minimized with Thread Pool)
+    - Thread context switches are costly
+
+![image](./images/thread-concurrency.png)
+
+### GoConcurrency
+- Goroutines - lightweight thread-like infrastructure
+- Built-in scheduler
+![image](./images/go-concurrency.png)
+
+### sync.WaitGroup
+- Semaphore based counter
+- Ability to block the execution of a function until the counter becomes 0
