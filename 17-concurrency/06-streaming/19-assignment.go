@@ -1,0 +1,4 @@
+/*
+Write a program that generates the prime number between the given range asynchronously
+Print the generated numbers in the main function
+*/
