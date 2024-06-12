@@ -212,6 +212,26 @@ go run .
 ```
 go get [module_name]
 ```
+##### Update the go.mod file
+```
+go mod tidy
+```
+##### To download the dependencies (documented in the go.mod file)
+```
+go mod download
+```
+##### To localize the dependencies (in the "vendor" folder)
+```
+go mod vendor
+```
+##### Other useful commands
+```
+go mod graph
+go mod why [module_name]
+```
+##### go mod command reference
+- https://go.dev/ref/mod
+
 ### Package
 - internal organization of a module
 - Typically folders
